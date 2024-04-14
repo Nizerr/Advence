@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Account Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e9ebee;
+            margin: 0;
+            padding: 0;
+        }
+        .create-account-form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            margin: 50px auto;
+        }
+        .create-account-form h2 {
+            font-size: 24px;
+            color: #333;
+            margin-top: 0;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            font-size: 14px;
+            color: #333;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group input[type="password"],
+        .form-group input[type="file"],
+        .form-group textarea,
+        .form-group select,
+        .form-group input[type="range"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .form-group input[type="submit"] {
+            padding: 10px;
+            background-color: #34c242;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+        .form-group input[type="submit"]:hover {
+            background-color: #31a737;
+        }
+        .row {
+            display: flex;
+            justify-content: space-between;
+        }
+        .row .col-half {
+            width: 48%;
+        }
+        .radio-group, .checkbox-group {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .radio-group label,
+        .checkbox-group label {
+            margin-right: 10px;
+        }
+        .radio-group input[type="radio"],
+        .checkbox-group input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        .form-group .range {
+            display: flex;
+            align-items: center;
+        }
+        .form-group .range input[type="range"] {
+            flex: 1;
+            margin-right: 10px;
+        }
+        .form-group .range output {
+            min-width: 50px;
+            text-align: center;
+        }
+        .button-group {
+            text-align: center;
+        }
+        .button-group button {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="create-account-form">
+        <h2>Create Account</h2>
+        <form>
+            <div class="row">
+                <div class="form-group col-half">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" required>
+                </div>
+                <div class="form-group col-half">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+            </div>
+
+            <div class="row">
+                <div class="form-group col-half">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required>
+                </div>
+                <div class="form-group col-half">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group col-half radio-group">
+                    <label>Gender:</label>
+                    <label><input type="radio" name="gender" value="male" required> Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                    <label><input type="radio" name="gender" value="other"> Other</label>
+                </div>
+                <div class="form-group col-half checkbox-group">
+                    <label>Hobbies:</label>
+                    <label><input type="checkbox" name="hobbies" value="music"> Music</label>
+                    <label><input type="checkbox" name="hobbies" value="cooking"> Cooking</label>
+                    <label><input type="checkbox" name="hobbies" value="travel"> Travel</label>
+                    <label><input type="checkbox" name="hobbies" value="movies"> Movies</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="sourceOfIncome">Source of Income</label>
+                <select id="sourceOfIncome">
+                    <option value="employed">Employed</option>
+                    <option value="self-employed">Self-employed</option>
+                    <option value="unemployed">Unemployed</option>
+                    <option value="student">Student</option>
+                </select>
+            </div>
+
+            <div class="form-group range">
+                <label for="income">Income</label>
+                <input type="range" id="income" name="income" min="0" max="100000" step="1000" oninput="this.nextElementSibling.value = this.value">
+                <output>50,000</output>
+            </div>
+
+            <div class="form-group">
+                <label for="profilePicture">Upload Profile Picture</label>
+                <input type="file" id="profilePicture">
+            </div>
+
+            <div class="form-group range">
+                <label for="age">Age</label>
+                <input type="range" id="age" name="age" min="18" max="100" value="30" oninput="this.nextElementSibling.value = this.value">
+                <output>30</output>
+            </div>
+
+            <div class="form-group">
+                <label for="bio">Bio</label>
+                <textarea id="bio" rows="3"></textarea>
+            </div>
+
+            <div class="form-group button-group">
+                <button type="submit">Create</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+

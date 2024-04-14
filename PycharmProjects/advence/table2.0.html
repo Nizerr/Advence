@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>table</title>
+    <style>
+        caption{
+            caption-size: top;
+            border-collapse: collapse;
+        }
+
+        glossary{
+            width: 400px;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 2px solid black;
+            padding: 5px;
+        }
+        thead{
+            color: white;
+            background-color: #333333;
+        }
+        tbody{
+            color: blue;
+        }
+        tfoot{
+            color: red;
+        }
+        tr:nth-child(even){
+            background-color: #f3e2f3;
+        }
+        tr:nth-child(odd){
+            background-color: #f3e2t3;
+
+    </style>
+</head>
+<body>
+<table class="glossary">
+    <caption>Monthly savings</caption>
+    <thead>
+        <tr>
+            <th>Year</th>
+            <th>Month</th>
+            <th>Saving</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="2">2024</td>
+            <td>January</td>
+            <td>100$</td>
+        </tr>
+    </tbody>
+    <tr>
+        <td>2024</td>
+        <td>February</td>
+        <td>500%</td>
+    </tr>
+</table>
+</body>
+</html>

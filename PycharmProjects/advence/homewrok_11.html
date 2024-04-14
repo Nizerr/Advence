@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>homework_11</title>
+  <style>
+    table {
+      width: 80%;
+      min-width: 650px;
+      max-width: 800px;
+      margin: 0 auto;
+      border-collapse: collapse;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    caption {
+        text-align: right;
+        text-transform: uppercase;
+        color: #666666;
+        font-weight: 700;
+    }
+    th {
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+    tr th:first-child{
+        color:#666666;
+    }
+    td, th {
+        text-align: center;
+        padding: 1em 0;
+    }
+    tr td:first-child{
+        text-align: left;
+        color: #666666;
+        padding-left: 0.7em;
+    }
+    span {
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 1.2em;
+        display: inline-block;
+        border: 2px solid #ffffff;
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+        text-align: center;
+    }
+    .plus {
+        border-radius: 50%;
+    }
+
+    .minus {
+        border-radius: 50%;
+    }
+
+    .col-1 {
+        background-color: #dddddd;
+    }
+    .col-2 {
+        background-color: #17d0d3;
+    }
+    .col-3 {
+        background-color: #8ac149;
+    }
+    .col-4 {
+        background-color: #feca28;
+    }
+    .col-5 {
+        background-color: #f44236;
+    }
+    thead {
+        border-bottom: 1px solid #ebebeb;
+    }
+    tfoot {
+        border-top: 1px solid #ebebeb;
+    }
+    /* Correct the column width and alignment */
+    colgroup col {
+        width: 20%;
+    }
+    colgroup .col-1 {
+        width: auto;
+    }
+  </style>
+</head>
+<body>
+<table>
+    <caption>title table</caption>
+    <colgroup>
+        <col class="col-1">
+        <col class="col-2">
+        <col class="col-3">
+        <col class="col-4">
+        <col class="col-5">
+    </colgroup>
+    <thead>
+        <tr>
+            <th>Specification</th>
+            <th>Free</th>
+            <th>Basic</th>
+            <th>Standard</th>
+            <th>Premium</th>
+        </tr>
+    </thead>
+    <tfoot>
+        <tr>
+            <th>Price</th>
+            <th>$ 0.00</th>
+            <th>$ 9.99</th>
+            <th>$ 19.99</th>
+            <th>$ 29.99</th>
+        </tr>
+    </tfoot>
+    <tbody>
+        <tr>
+            <td>Lorem ipsum dolor</td>
+            <td><span class="plus">+</span></td>
+            <td><span class="plus">+</span></td>
+            <td><span class="plus">+</span></td>
+            <td><span class="plus">+</span></td>
+        </tr>
+        <tr>
+            <td>Ratione deserunt modi</td>
+            <td><span class="plus">+</span></td>
+            <td><span class="plus">+</span></td>
+            <td><span class="plus">+</span></td>
+            <td><span class="plus">+</span></td>
+        </tr>
+        <tr>
+            <td>Vel maiores odio</td>
+            <td><span class="minus">-</span></td>
+            <td><span class="plus">+</span></td>
+            <td><span class="plus">+</span></td>
+            <td><span class="plus">+</span></td>
+        </tr>
+        <tr>
+            <td>Minus vel aperiam natus</td>
+            <td><span class="minus">-</span></td>
+            <td><span class="minus">-</span></td>
+            <td><span class="plus">+</span></td>
+            <td><span class="plus">+</span></td>
+        </tr>
+        <tr>
+            <td>Provid minima sapiente</td>
+            <td><span class="minus">-</span></td>
+            <td><span class="minus">-</span></td>
+            <td><span class="minus">-</span></td>
+            <td><span class="plus">+</span></td>
+        </tr>
+        <tr>
+            <td>Eveniet eaque excepturi</td>
+            <td><span class="minus">-</span></td>
+            <td><span class="minus">-</span></td>
+            <td><span class="minus">-</span></td>
+            <td><span class="plus">+</span></td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>

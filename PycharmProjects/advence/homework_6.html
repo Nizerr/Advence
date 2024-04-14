@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>homework_6</title>
+  <style>
+    .lf {
+      padding: 50px;
+      box-sizing: border-box;
+      display: flex;
+    }
+    .container {
+      width: 250px;
+      height: 150px;
+      border: 3px solid blue;
+      padding: 10px;
+      margin-right: 0px;
+    }
+    .seasons-container {
+        border: 5px solid blue;
+        background-color: #f0f0f0;
+        padding: 20px;
+        width: 300px;
+        margin: 50px 50px 0;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .seasons-title {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 24px;
+        color: #333;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    }
+    .seasons-list > li {
+        list-style-type: none;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+    .seasons-list > li > ul {
+        list-style-type: none;
+        padding-left: 20px;
+    }
+    .seasons-list > li > ul > li {
+        font-weight: normal;
+        background: none;
+        padding-left: 5px;
+    }
+    </style>
+</head>
+<body>
+
+<div class="lf">
+  <div class="container">
+    <p>Текст — середній елемент схеми комунікації, яку можна уявити у вигляді триелементної структури:</p>
+  </div>
+  <div class="container">
+    <p>Щодо мовця (адресанта) текст є кодованою величиною, оскільки мовець кодує певну інформацію.</p>
+  </div>
+  <div class="container">
+    <p>Текст породжується мовцем, тим, хто пише, відповідно до його задуму, з потребою найкращого передавання змісту.</p>
+  </div>
+</div>
+<div class="seasons-container">
+    <div class="seasons-title">Seasons</div>
+    <ul class="seasons-list">
+        <li>&gt;Winter
+            <ul>
+                <li>❄️December</li>
+                <li>❄️January</li>
+                <li>❄️February</li>
+            </ul>
+        </li>
+        <li>&gt;Spring
+            <ul>
+                <li>🌸March</li>
+                <li>🌸April</li>
+                <li>🌸May</li>
+            </ul>
+        </li>
+        <li>&gt;Summer
+            <ul>
+                <li>☀️June</li>
+                <li>☀️July</li>
+                <li>☀️August</li>
+            </ul>
+        </li>
+        <li>&gt;Autumn
+            <ul>
+                <li>🍂September</li>
+                <li>🍂October</li>
+                <li>🍂November</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>

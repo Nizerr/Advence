@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Seasons</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        .seasons-container {
+            border: 5px solid blue;
+            background-color: #f0f0f0;
+            padding: 20px;
+            width: 300px; /* Ви можете налаштувати ширину */
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .seasons-title {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .seasons-list > li {
+            list-style-type: none;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .seasons-list > li > ul {
+            list-style-type: none;
+            padding-left: 20px; /* Відступ для місяців */
+        }
+
+        .seasons-list > li > ul > li {
+            font-weight: normal;
+            background: none;
+            padding-left: 5px;
+        }
+
+        /* Знімаємо скролл, якщо він не потрібен */
+        .seasons-container {
+            max-height: 100vh;
+            overflow: hidden;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="seasons-container">
+    <div class="seasons-title">Seasons</div>
+    <ul class="seasons-list">
+        <li>Winter
+            <ul>
+                <li>December</li>
+                <li>January</li>
+                <li>February</li>
+            </ul>
+        </li>
+        <li>Spring
+            <ul>
+                <li>March</li>
+                <li>April</li>
+                <li>May</li>
+            </ul>
+        </li>
+        <li>Summer
+            <ul>
+                <li>June</li>
+                <li>July</li>
+                <li>August</li>
+            </ul>
+        </li>
+        <li>Autumn
+            <ul>
+                <li>September</li>
+                <li>October</li>
+                <li>November</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>
+>

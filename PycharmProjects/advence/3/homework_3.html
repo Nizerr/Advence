@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>homework_3</title>
+  <style>
+    .lf {
+      border: 5px solid black;
+      background-color: rgb(200, 200, 200);
+      margin:auto;
+      padding: 30px;
+      border-color: purple;
+      width: 91%;
+      margin-bottom: 10px;
+    }
+    h1 {
+      color: pink;
+    }
+    body {
+      border: 2px solid black;
+      text-align: left;
+      padding: 10px;
+    }
+    .job{
+      font-size: 20px;
+      color: rgb(190, 190, 190)
+    }
+    .dotted-line {
+      position: relative;
+      margin: 20px 0;
+      padding-top: 0;
+      line-height: 0;
+    }
+    .dotted-line::before {
+      content: '•••••••••••••••••••••••••••••••••••••••••••••••••••••••';
+      font-size: 50px;
+      color: purple;
+    }
+    .letter{
+      font-size: 36px;
+      color: blue;
+    }
+    .letter::after {
+      content: '.';
+    }
+    .lettet{
+      font-size: 15px;
+      color: red;
+      font-family: Arial, handwriting;
+    }
+    .image {
+      transition: border 0.3s ease-in-out;
+    }
+    .image:hover {
+      border: 5px solid green;
+    }
+    a {
+      color: blue;
+    }
+    a:visited {
+      color: orange;
+    }
+    a:hover, a:active {
+      color: green;
+    }
+  </style>
+</head>
+<body>
+<h1>Jane Doe</h1>
+<div class="dotted-line"></div>
+<div class="job">Web Developer</div>
+<p><span class="letter">F</span>ar far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+
+<p class="lettet">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. </p>
+<h2><em>Contact information</em></h2>
+<ul class="lf">
+  <li>Email: <a href="mailto:jane@example.com">jane@example.com</a></li>
+  <li>Web: <a href="http://example.com">http://example.com</a></li>
+  <li>Tel: 123 45678</li>
+</ul>
+
+<img src="/1.png" alt="Example Image" class="image">
+</body>
+</html>
+
+

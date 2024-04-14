@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework_4</title>
+  <style>
+    .box > p {
+      color: red;
+    }
+    .container p {
+      font-size: 16px;
+    }
+    .box span:nth-of-type(2) {
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      font-style: italic;
+      text-decoration: underline;
+      letter-spacing: 1px;
+    }
+    .inner p:last-child {
+      background-color: #f0f0f0;
+    }
+    section .box p + span {
+      color: green;
+    }
+    .notebox{
+      font-size: 1.2em;
+      border: 3px solid gray;
+      padding: 10px;
+      margin: 10px;
+    }
+    .warning{
+      font-size: 1.2em;
+      font-weight: bold;
+      border: 3px solid orange;
+      padding: 10px;
+      margin: 10px;
+    }
+    .danger{
+      font-size: 1.2em;
+      font-weight: bold;
+      border: 3px solid red;
+      padding: 10px;
+      margin: 10px;
+    }
+    .a {
+        font-size: 200%;
+    }
+    li.a:not(:first-child) {
+    background-color: yellow;
+    color: red;
+    font-size: 200%;
+    }
+    li.a.b {
+    background-color: initial;
+    color: red;
+    }
+    ul *:last-child {
+    font-size: 200%;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+    <div class="box">
+        <p>Перший абзац</p>
+        <div class="inner">
+            <p>Внутрішній абзац 1</p>
+            <p>Внутрішній абзац 2</p>
+            <span>Спан 1</span>
+             <p>Внутрішній абзац 3</p>
+        </div>
+    </div>
+    <div class="box selected">
+        <p>Другий абзац</p>
+    </div>
+    <div class="wrapper">
+        <p>Третій абзац</p>
+        <div class="box">
+            <p>Четвертий абзац</p>
+            <span>Спан 2  – формування тексту </span>
+        </div>
+    </div>
+    <section>
+        <div class="box">
+            <p>П'ятий абзац</p>
+            <span>Спан 3</span>
+            <p>Шостий абзац</p>
+            <span>Спан 4</span>
+        </div>
+    </section>
+</div>
+<div class="notebox">
+  This is an informational note
+</div>
+<div class="warning">
+  This note shows a warning
+</div>
+<div class="danger">
+  This note shows danger!
+</div>
+<h1>Attribute presence and value selectors</h1>
+<ul>
+  <li>Item 1</li>
+  <li class="a">Item 2</li>
+  <li class="a b">Item 3</li>
+  <li>Item 4</li>
+</ul>
+</body>
+</html>

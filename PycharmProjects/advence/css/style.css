@@ -1,0 +1,13 @@
+    .main {
+      color: red;
+      border: 2px solid yellow;
+      text-align: center;
+    }
+    p {
+    color: red;
+    }
+    #py {
+      color: yellow;
+      border: 2px solid blue;
+      text-align: center;
+    }

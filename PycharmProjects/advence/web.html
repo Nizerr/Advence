@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Лінія для слова "Серце"</title>
+<style>
+    /* Стилізація лінії */
+    .heart-line {
+        position: relative;
+        text-align: center;
+    }
+    .heart-line::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        width: 100%;
+        border-top: 1px solid black;
+        z-index: -1;
+    }
+    .heart-word {
+        background-color: white;
+        padding: 0 10px;
+    }
+</style>
+</head>
+<body>
+
+<div class="heart-line">
+    <span class="heart-word">Серце</span>
+</div>
+
+</body>
+</html>
